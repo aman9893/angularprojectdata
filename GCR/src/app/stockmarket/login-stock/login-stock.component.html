@@ -1,0 +1,24 @@
+<div class="login_window">
+  <div [formGroup]="loginForm" novalidate>
+    <mat-card  class="form_container_wrapper_emp">
+      <div class="change_company_header">
+        <span class="logo_company_header">Growth Capital  <span class="three_five"> Research</span> </span>
+      </div>
+      <div class="change_company_cantainer">
+      <mat-form-field class="form_container">
+        <input  formControlName="emp_unique_id" matInput placeholder="Admin Id">
+      </mat-form-field>
+
+      <mat-form-field class="form_container">
+        <input type="password" formControlName="emp_password" matInput placeholder="Admin Password">
+      </mat-form-field>
+    </div>
+    <div  class="change_company_cantainer">
+      
+      <div class="form_container_btn_wrapper">
+        <button  type="submit" [disabled]="!loginForm.valid"  (click)="onSubmit()"   mat-stroked-button color="primary"> Login </button>
+      </div>
+    </div>
+    </mat-card>
+  </div>
+</div>

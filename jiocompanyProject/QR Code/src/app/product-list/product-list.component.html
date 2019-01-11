@@ -1,0 +1,166 @@
+<div class="heaer_postion"> 
+  <span>Pending Picking Application</span> 
+</div>
+<div class="superviser_wrapperdetails">
+  <div class="superviser_cantiner"> 
+    <div class="row col-md-12">
+     <div class="col-md-6">
+       <div class="label_details">
+        EWM WH NO :
+     </div>
+     <div class="label_details_text">
+      <mat-form-field>
+        <mat-select>
+          
+        </mat-select>
+      </mat-form-field>
+      </div>
+    </div>
+    <div class="col-md-6">
+        <div class="label_details">
+            Storage Type  :
+          </div>
+          <div class="label_details_text">
+            <mat-form-field>
+              <mat-select>
+                
+              </mat-select>
+            </mat-form-field>
+        </div>
+     </div>
+  </div>
+  <div class="row col-md-12">
+      <div class="col-md-6">
+        <div class="label_details">
+         Reservation No:     </div>
+      <div class="label_details_text">
+        <mat-form-field>
+          <mat-select>
+            
+          </mat-select>
+        </mat-form-field>
+       </div>
+     </div>
+     <div class="col-md-6">
+         <div class="label_details">
+             Storage Section:
+           </div>
+           <div class="label_details_text">
+            <mat-form-field>
+              <mat-select>
+                
+              </mat-select>
+            </mat-form-field>
+         </div>
+      </div>
+   </div>
+   <div class="row col-md-12">
+      <div class="col-md-6">
+        <div class="label_details">
+         Requirement Date :
+      </div>
+      <div class="label_details_text">
+        <mat-form-field>
+          <mat-select>
+            
+          </mat-select>
+        </mat-form-field>
+       </div>
+     </div>
+     <div class="col-md-6">
+         <div class="label_details">
+             Storage Bin
+           </div>
+           <div class="label_details_text">
+            <mat-form-field>
+              <mat-select>
+                
+              </mat-select>
+            </mat-form-field>
+         </div>
+      </div>
+   </div>
+   <div class="row col-md-12">
+      <div class="col-md-6">
+        <div class="label_details">
+         Product :
+      </div>
+      <div class="label_details_text">
+        <mat-form-field>
+          <mat-select>
+            
+          </mat-select>
+        </mat-form-field>
+       </div>
+     </div>
+     <div class="col-md-6">
+         <div class="label_details">
+            Category
+           </div>
+           <div class="label_details_text">
+                <mat-form-field>
+        <mat-select>
+        </mat-select>
+      </mat-form-field>
+         </div>
+      </div>
+   </div>
+  </div>
+  <div class="more_info_btn">
+    <button mat-raised-button routerLink="/supervisermoreDetailsInfo"   color="primary">Search</button>
+  </div>
+
+  </div>
+  
+  <div class="details_wrapper">
+      <div class="table-responsive">
+      <table class="table tabel_details_wrapper">
+          <thead>
+            <tr>
+              <th>Source Bin No<br></th>
+              <th>Shopfloor stoc Desc.</th>
+              <th>Requirement Date/<br>
+              Task Creation Date</th>
+              <th>Material Desc.</th>
+              <th>Stk type Desc.</th>
+              <th> Task No</th>
+              <th>Str Section</th>
+              <th>Stock category</th>
+              <th>Approval</th>
+              <th>Additional Data</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr   routerLink="/product_details">
+              <td>CLS-1014-01-00</td>
+              <td>VCM-MECH</td>
+              <td>15.09.2018</td>
+              <td>GRY 0300/288/1</td>
+              <td>DN-Do not transfer</td>
+              <td>10000000000101</td>
+              <td>LTR</td>
+              <td></td>
+              <td></td>
+              <td>
+                <button mat-raised-button  (click)="moreinfo($event)" 
+                 color="primary">More Info</button></td>
+            </tr>
+            <tr   routerLink="/product_details">
+              <td>CLS-1014-01-00</td>
+              <td>VCM-MECH</td>
+              <td>15.09.2018</td>
+              <td>GRY 0300/288/1</td>
+              <td>DN-Do not transfer</td>
+              <td>10000000000101</td>
+              <td>LTR</td>
+              <td></td>
+              <td></td>
+              <td>
+                <button mat-raised-button  (click)="moreinfo($event)" 
+                 color="primary">More Info</button></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+  </div>

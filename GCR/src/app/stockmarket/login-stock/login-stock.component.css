@@ -1,0 +1,43 @@
+.login_window {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 101px;
+  }
+
+  .login_window_wrapper{
+
+  }
+  .form_container{
+    width: 100%;
+  }
+  .form_container_wrapper{
+    float: left;
+    width: 31%;
+  }
+  .form_container_btn_wrapper{
+    text-align: right;
+    margin: 28px;
+    padding-bottom: 33px;
+}
+  .change_company_header {
+    text-align: center;
+    padding: 18px;
+    font-family: sans-serif;
+    font-size: 22px;
+    background: #c5cae933;
+    font-weight: bold;
+  }
+  .change_company_header span{
+    color: #3f51b5;
+  }
+  .register_text{
+    text-align: center;
+    background: #f8f9fa7d;
+    margin: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+  }

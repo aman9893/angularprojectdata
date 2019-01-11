@@ -1,0 +1,50 @@
+<mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button type="button" aria-label="Toggle sidenav" 
+        mat-icon-button (click)="drawer.toggle()" >
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span class="nav_title">QR History of HU</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-sidenav-container>
+      <mat-sidenav class="nav_bar" #drawer mode="side" opened="true" disableClose="true">
+        <mat-nav-list  >
+          <a  class="list_item"   (click)='add()' mat-list-item routerLink='/navigation/basicview'>
+            <i class="material-icons">
+                visibility
+                </i>
+            Basic View</a>
+          <a class="list_item"  (click)='add()'  mat-list-item routerLink='/navigation/mmdetails'>
+            <i class="material-icons">
+                view_list
+                </i>
+            MM Details</a>
+          <a class="list_item active1"  (click)='add()'  mat-list-item routerLink='/navigation/supplier'>
+            <i class="material-icons">
+                receipt
+                </i>
+            Supplier Receipt Details</a>
+          <a class="list_item" (click)='add()'   mat-list-item routerLink='/navigation/movement'>
+            <i class="material-icons">
+                beenhere
+                </i>
+            All Movements</a>
+            <a class="list_item" (click)='add()'   mat-list-item routerLink='/navigation/ogpdetails'>
+              <i class="material-icons">
+                  event_note
+                  </i>
+              OGP Details</a>
+              <a class="list_item"  (click)='add()'  mat-list-item routerLink='/navigation/attachments'>
+                <i class="material-icons">
+                    attachment
+                    </i>
+                Attachment</a>
+                  
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content class="nav_content">
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+    <app-footer></app-footer>

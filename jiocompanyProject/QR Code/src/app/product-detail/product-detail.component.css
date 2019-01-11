@@ -1,0 +1,23 @@
+.lab_1{
+    float: left;
+    padding: 1px;
+    font-weight: 600;
+    width: 141px;
+}
+.val_1{
+    float: left;
+    padding: 1px;
+    font-weight: 400;
+}
+.wrapperdata{  
+      float: left;
+    width: 100%;
+    margin-top: 19px;
+
+}
+.description_btn{
+    float:right;
+}
+.description_btn button{
+    margin: 10px;
+}

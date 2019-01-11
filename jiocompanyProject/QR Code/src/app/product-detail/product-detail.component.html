@@ -1,0 +1,283 @@
+<div>
+  <div class="heaer_postion">
+      <span>Stock Details</span>
+      <div class="back_icon" (click)="goBack()">
+          <i class="material-icons"> arrow_back</i>
+      </div>
+  </div>
+  <div class="wrapperdata">
+
+      <div class="row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>Source Bin:</label>
+              </div>
+              <div class="val_1">
+                  <span>CLS-1000-11020-01</span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>Destination Bin:</label>
+              </div>
+              <div class="val_1">
+                  <span>GI-ZONE</span>
+              </div>
+          </div>
+      </div>
+   <div>
+      <div class=" row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>Material Desc:</label>
+              </div>
+              <div class="val_1">
+                  <span>GRY 0300/288/1 TX SIM BRT</span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>Material:</label>
+              </div>
+              <div class="val_1">
+                  <span>2000021211</span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class=" row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label> Batch:</label>
+              </div>
+              <div class="val_1">
+                  <span>1000002221</span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>SLED:</label>
+              </div>
+              <div class="val_1">
+                  <span>10.10.2019</span>
+              </div>
+          </div>
+      </div>
+
+      <div class=" row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label> Source Stock Type Desc:</label>
+              </div>
+              <div class="val_1">
+                  <span>F2-Unresricted stock</span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>Res No:</label>
+              </div>
+              <div class="val_1">
+                  <span>102210</span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label> Del no:</label>
+              </div>
+              <div class="val_1">
+                  <span>500061188</span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>Res Item:</label>
+              </div>
+              <div class="val_1">
+                  <span>10</span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class=" row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label> Del Item:</label>
+              </div>
+              <div class="val_1">
+                  <span>10</span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>Res Qty:</label>
+              </div>
+              <div class="val_1">
+                  <span>20</span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label> Del Qty:</label>
+              </div>
+              <div class="val_1">
+                  <span>10(EA)</span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>WT Item No:</label>
+              </div>
+              <div class="val_1">
+                  <span>10</span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label> WT Number:</label>
+              </div>
+              <div class="val_1">
+                  <span>100000000101</span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>WPT Description:</label>
+              </div>
+              <div class="val_1">
+                  <span>Stock Removal</span>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label> WBS:</label>
+              </div>
+              <div class="val_1">
+                  <span>
+                      <mat-form-field>
+                          <mat-select>
+                              <mat-option *ngFor="let food of foods" [value]="food.value">
+                                  {{food.viewValue}}
+                              </mat-option>
+                          </mat-select>
+                      </mat-form-field>
+                  </span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>Strategy Violation:</label>
+              </div>
+              <div class="val_1">
+                  <span>
+                      <mat-form-field>
+                          <mat-select>
+                              <mat-option *ngFor="let food of foods" [value]="food.value">
+                                  {{food.viewValue}}
+                              </mat-option>
+                          </mat-select>
+                      </mat-form-field>
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <div class=" row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label> QTY Violation:</label>
+              </div>
+              <div class="val_1">
+                  <span>
+                      <mat-form-field>
+                          <mat-select>
+                              <mat-option *ngFor="let food of foods" [value]="food.value">
+                                  {{food.viewValue}}
+                              </mat-option>
+                          </mat-select>
+                      </mat-form-field>
+                  </span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>Last Scanned HU:</label>
+              </div>
+              <div class="val_1">
+                  <span>
+                      <mat-form-field>
+                          <mat-select>
+                              <mat-option *ngFor="let food of foods" [value]="food.value">
+                                  {{food.viewValue}}
+                              </mat-option>
+                          </mat-select>
+                      </mat-form-field>
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <div class="row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label> WT Number:</label>
+              </div>
+              <div class="val_1">
+                  <span>100000000101</span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>WPT Description:</label>
+              </div>
+              <div class="val_1">
+                  <span>Stock Removal</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="row col-md-12">
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label> WT Number:</label>
+              </div>
+              <div class="val_1">
+                  <span>100000000101</span>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="lab_1">
+                  <label>WPT Description:</label>
+              </div>
+              <div class="val_1">
+                  <span>Stock Removal</span>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="description_btn">
+      <button mat-raised-button (click)="Qr()" color="primary">QR Histroy</button>
+      <button mat-raised-button (click)="moreinfo()" color="primary"> Complete </button>
+      <button mat-raised-button routerLink="/picking_details" color="primary"> Stock Details</button>
+  </div>
+</div>
+
+</div>

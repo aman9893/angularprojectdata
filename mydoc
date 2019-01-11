@@ -1,0 +1,30 @@
+
+cpanel1
+
+https://sg2plcpnl0157.prod.sin2.secureserver.net:2083/cpsess3691101953/frontend/gl_paper_lantern/index.html
+
+t5uss2c395zz
+Abhishek@96
+
+
+https://webmail.rigvedtech.com/owa/auth/logon.aspx?url=https%3a%2f%2fwebmail.rigvedtech.com%2fowa&reason=0
+
+
+aman.jain
+welcome@123
+
+
+axis
+918010054553946
+
+utib0002775
+
+
+
+start my sql 
+ sudo /opt/lampp/lampp start
+
+
+sudo sysctl fs.inotify.max_user_watches=524288
+
+sudo sysctl -p --system

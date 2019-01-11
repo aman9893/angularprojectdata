@@ -1,0 +1,21 @@
+.wrapper{
+    float: left;
+    width: 100%;
+}
+
+.mat-raised-button{
+    float: right;
+    margin: 10px;
+}
+
+.example-full-width{
+width: 90%;
+}
+.material-icons{
+    cursor: pointer;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    font-size: 40px;
+}

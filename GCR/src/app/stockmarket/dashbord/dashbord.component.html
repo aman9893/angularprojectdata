@@ -1,0 +1,56 @@
+<mat-toolbar color="warn">
+  <mat-toolbar-row>
+    <button class="btn_nav" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      <span class="menubar"> GCR Dashboard</span>
+    </button>
+    <span class="example-spacer"></span>
+   
+    <button mat-stroked-button [matMenuTriggerFor]="menu"> <mat-icon class="employee_side_icon">apps</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button  routerLink='/employee/profile' mat-menu-item> 
+          <mat-icon class="employee_side_icon">person</mat-icon>Profile
+      </button>
+      <button mat-menu-item (click)="Logout()">  <mat-icon class="employee_side_icon">keyboard_return</mat-icon>Logout</button>
+      <button mat-menu-item    >  <mat-icon class="employee_side_icon">screen_lock_rotation</mat-icon>Reset Password</button>
+    </mat-menu>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer mode="side" opened role="navigation">
+    <mat-nav-list class="nav_list  nav_side_link ">
+      <a mat-list-item routerLink='/gcr/home'>
+        <mat-icon> home</mat-icon> <span>Dashboard</span>
+      </a>
+      <a mat-list-item routerLink='/gcr/lead'>
+        <mat-icon>person</mat-icon><span> Lead</span>
+      </a>
+      <a mat-list-item routerLink='/employee/attendance'>
+        <mat-icon> poll </mat-icon> <span>Stock Rate</span>
+      </a>
+      <a mat-list-item routerLink='/employee/task'>
+        <mat-icon>playlist_add_check</mat-icon><span> Task</span>
+      </a>
+      <a mat-list-item routerLink='/employee/project'>
+        <mat-icon> work </mat-icon> <span>Project</span>
+      </a>
+      <a mat-list-item routerLink='/employee/setting'>
+        <mat-icon> build </mat-icon> <span>Setting</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- <app-info-dash>
+      
+    </app-info-dash> -->
+    <div class="dashboard_wrap">
+      <router-outlet></router-outlet>
+    </div>
+
+   </mat-sidenav-content>
+   </mat-sidenav-container> 
+
+<app-footer></app-footer>
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->

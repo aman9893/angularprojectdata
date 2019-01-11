@@ -1,0 +1,22 @@
+.table-responsive{
+  width: 90%;
+  border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 9px;
+    margin-left: 7px;
+    display: table;
+  
+}
+.table_header{
+  background-color:#d3d3d361;
+  width: 270px;
+}
+
+#MyTable td:hover { 
+  background-color:#d3d3d361;
+  cursor: pointer;
+}
+
+table td{
+  padding: 3px;
+}

@@ -1,0 +1,61 @@
+.example-container {
+    width: 100%;
+    height: 565px;
+    overflow-x: none;
+    /* margin: 12px; */
+  }
+.driver_cantained{
+
+    /* margin-left: 223px !important; */
+}
+
+.matdrawer_tag{
+
+}
+
+.nav_side_link mat-icon {
+    font-size: 21px;
+    color: #343a40cc;
+}
+
+.employee_side_icon {
+    margin: 0px;
+    cursor: pointer;
+  }
+   button{
+    outline: none;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+.nav_list span{
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: poppinsnor;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.73);
+}
+.nav_list a{
+
+}
+
+
+.btn_nav{
+    outline: none;
+    padding-left: 8px;
+}
+.menubar{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: poppinsnor;
+    text-transform: capitalize;
+
+}
+.empside_side_rightheader{
+    
+}
+
+.agm-map {
+    height: 300px;
+  }

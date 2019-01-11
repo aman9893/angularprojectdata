@@ -1,0 +1,43 @@
+<div class="toolbar_wrapper">
+  <mat-toolbar>
+    <button class="menu_button" mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="wrapper">
+      QR history of HU
+    </div>
+  </mat-toolbar>
+
+  <mat-toolbar>
+      <div class="back_icon" (click)="goBack()">
+          <i class="material-icons"> arrow_back</i>
+      </div>
+    <div class="wrapper">
+      SAP Code| 200002301(NUT Connecting ROD)
+    </div>
+  </mat-toolbar>
+</div>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/basicview">
+    <span>Basic View</span>
+  </button>
+  <button mat-menu-item routerLink="/mmdetails">
+    <span>MM Details</span>
+  </button>
+  <button mat-menu-item routerLink="/supplier">
+    <span>Supplier Receipt Details</span>
+  </button>
+
+  <button mat-menu-item routerLink="/movement">
+    <span>All Movements</span>
+  </button>
+
+  <button mat-menu-item>
+    <span>OGP Details</span>
+  </button>
+
+  <button mat-menu-item>
+    <span>Attachments</span>
+  </button>
+
+</mat-menu>

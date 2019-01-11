@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <h2 mat-dialog-title>Scan QR Code</h2>
+   <span class="wrapper1">
+    <mat-form-field class="example-full-width">
+        <input matInput>
+      </mat-form-field>
+      <i class="fas fa-qrcode"></i>
+</span>
+
+<div class="btn1">
+    <button   mat-raised-button mat-dialog-close color="primary">Cancel</button>
+  <button   mat-raised-button mat-dialog-close color="primary" 
+  (click)="onClose()" routerLink="/navigation/basicview">Submit</button>
+  
+</div>
+</div>

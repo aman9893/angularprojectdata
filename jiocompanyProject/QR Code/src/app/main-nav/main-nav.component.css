@@ -1,0 +1,26 @@
+.nav_bar{
+  height:600px;
+}
+
+.material-icons{
+  margin-right: 6px;
+}
+.mat_list{
+  margin-top: 25px;
+}
+.list_item{
+  margin-top: 25px;
+} 
+
+.nav_content{
+  height:500px;
+}
+.nav_title{
+  text-align: center;
+  margin-left: 490px;
+}
+
+
+.active1{
+ background-color: yellowgreen;
+}
